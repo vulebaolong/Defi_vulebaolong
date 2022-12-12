@@ -1,0 +1,43 @@
+.btn,
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+
+    &.btn-white {
+        color: var(--color-dark);
+        background-color: var(--color-white);
+        padding: 0.1rem 0.24rem;
+        white-space: nowrap;
+        border-radius: 0.04rem;
+        transition: all .3s;
+        position: relative;
+        overflow: hidden;
+
+        .btn-white-text {
+            position: relative;
+            z-index: 1;
+        }
+
+        &::after {
+            content: "";
+            background-color: var(--color-hover);
+            width: 150%;
+            height: 2rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all .4s cubic-bezier(.66,0,.34,1);
+            z-index: 0;
+        }
+
+        &:hover {
+            color: var(--color-white);
+
+            &::after {
+                top: -100%;
+            }
+        }
+    }
+}
