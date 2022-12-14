@@ -12,6 +12,7 @@
         transition: all .3s;
         position: relative;
         overflow: hidden;
+        display: inline-block;
 
         .btn-white-text {
             position: relative;
@@ -39,5 +40,9 @@
                 top: -100%;
             }
         }
+    }
+
+    &.btn-outline {
+        display: flex;
     }
 }

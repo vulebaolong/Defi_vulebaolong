@@ -4,6 +4,9 @@
     align-items: center;
     height: var(--header-height);
     padding: 0.17rem 0.52rem;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
 
     &_logo {
         width: 1.5rem;

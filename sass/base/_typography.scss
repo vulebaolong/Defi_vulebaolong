@@ -4,8 +4,25 @@ a.label-1 {
     font-weight: 600;
 }   
 
-a.label-2 {
+a.label-2,
+span.label-2 {
     color: var(--color-white);
     font-size: 0.14rem;
     font-weight: 700;
+}
+
+h1.title-h1 {
+    color: var(--color-white);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: -.02rem;
+    line-height: .8rem;
+}
+
+p.decs-1 {
+    color: var(--color-white);
+    font-size: .24rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: .4rem;
 }

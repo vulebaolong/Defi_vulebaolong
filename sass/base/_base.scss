@@ -22,6 +22,8 @@
     --container-width-small: 8rem;
     --header-height: .76rem;
     --wh-logo-icon: .6rem;
+
+    --width-container: 11.1rem;
 }
 
 *,
@@ -40,4 +42,10 @@ html {
 body {
     font-family: var(--font);
     background-color: var(--color-main-dark);
+    position: relative;
+}
+
+.container {
+    max-width: var(--width-container);
+    margin: 0 auto;
 }

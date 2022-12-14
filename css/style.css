@@ -3,17 +3,35 @@ a.label-1 {
   font-size: 0.16rem;
   font-weight: 600; }
 
-a.label-2 {
+a.label-2,
+span.label-2 {
   color: var(--color-white);
   font-size: 0.14rem;
   font-weight: 700; }
+
+h1.title-h1 {
+  color: var(--color-white);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: -.02rem;
+  line-height: .8rem; }
+
+p.decs-1 {
+  color: var(--color-white);
+  font-size: .24rem;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: .4rem; }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: var(--header-height);
-  padding: 0.17rem 0.52rem; }
+  padding: 0.17rem 0.52rem;
+  position: fixed;
+  z-index: 10;
+  width: 100%; }
   .header_logo {
     width: 1.5rem;
     height: 100%;
@@ -66,7 +84,8 @@ a.label-2 {
     border-radius: 0.04rem;
     transition: all .3s;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    display: inline-block; }
     .btn.btn-white .btn-white-text,
     .btn:link.btn-white .btn-white-text,
     .btn:visited.btn-white .btn-white-text {
@@ -94,6 +113,56 @@ a.label-2 {
       .btn:link.btn-white:hover::after,
       .btn:visited.btn-white:hover::after {
         top: -100%; }
+  .btn.btn-outline,
+  .btn:link.btn-outline,
+  .btn:visited.btn-outline {
+    display: flex; }
+
+.hero {
+  display: flex;
+  padding-top: calc(var(--header-height) + 1rem); }
+  .hero_left {
+    flex-basis: 37%; }
+    .hero_left-description {
+      padding: 0.19rem 0 0.32rem; }
+    .hero_left-button {
+      display: flex;
+      gap: 0.19rem; }
+      .hero_left-button-left {
+        display: flex;
+        align-items: center; }
+      .hero_left-button-right {
+        display: flex;
+        align-items: center;
+        gap: 0.05rem; }
+        .hero_left-button-right-icon {
+          width: 0.18rem; }
+  .hero_right {
+    flex: 1; }
+    .hero_right-video {
+      width: 5rem;
+      transform: translate(1.7rem, -0.8rem) scale(1.7); }
+
+.ellipses {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+  .ellipses-item {
+    position: absolute; }
+    .ellipses-item img {
+      width: 100%; }
+  .ellipses-1 {
+    top: 0;
+    left: 0;
+    width: 50%; }
+  .ellipses-2 {
+    top: 0;
+    right: 0;
+    width: 20%;
+    z-index: -1; }
 
 :root {
   --font: 'Open Sans', sans-serif;
@@ -113,7 +182,8 @@ a.label-2 {
   --container-width: 11.1rem;
   --container-width-small: 8rem;
   --header-height: .76rem;
-  --wh-logo-icon: .6rem; }
+  --wh-logo-icon: .6rem;
+  --width-container: 11.1rem; }
 
 *,
 *::before,
@@ -128,4 +198,9 @@ html {
 
 body {
   font-family: var(--font);
-  background-color: var(--color-main-dark); }
+  background-color: var(--color-main-dark);
+  position: relative; }
+
+.container {
+  max-width: var(--width-container);
+  margin: 0 auto; }

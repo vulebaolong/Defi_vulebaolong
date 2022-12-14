@@ -1,0 +1,45 @@
+.hero {
+    display: flex;
+    padding-top: calc(var(--header-height) + 1rem);
+
+    &_left {
+        flex-basis: 37%;
+
+        
+
+        &-description {
+            padding: 0.19rem 0 0.32rem;
+        }
+
+        &-button {
+
+            display: flex;
+            gap: 0.19rem;
+
+            &-left {
+                display: flex;
+                align-items: center;
+            }
+
+            &-right {
+                display: flex;
+                align-items: center;
+                gap: 0.05rem;
+
+                &-icon {
+                    width: 0.18rem;
+                }
+            }
+
+        }
+    }
+
+    &_right {
+        flex: 1;
+        
+        &-video {
+            width: 5rem;
+            transform: translate(1.7rem, -0.8rem) scale(1.7);
+        }
+    }
+}
