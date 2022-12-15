@@ -1,0 +1,25 @@
+.product {
+
+    &_top {
+        display: flex;
+        justify-content: space-between;
+
+        &-left {
+            display: flex;
+            flex-direction: column;
+            gap: 0.16rem;
+            flex-basis: 36%;
+
+            &-decs {
+                opacity: .4;
+            }
+        }
+
+        &-right {
+            flex-basis: 36%;
+
+        }
+    }
+
+    &_bottom {}
+}

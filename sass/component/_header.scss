@@ -7,6 +7,13 @@
     position: fixed;
     z-index: 10;
     width: 100%;
+    transition: all .2s;
+
+    &.sticky {
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        background: rgba(4,15,55,.5);
+    }
 
     &_logo {
         width: 1.5rem;

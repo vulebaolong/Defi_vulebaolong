@@ -1,3 +1,59 @@
+// HEADING level 1
+h1.heading-1 {
+    color: var(--color-white);
+    font-size: var(--font-size-heading-1);
+    font-weight: 600;
+    letter-spacing: var(--letter-spacing-heading-1);
+    line-height: var(--line-height-heading-1);
+}
+
+p.decs-1 {
+    color: var(--color-white);
+    font-size: var(--font-size-decs-1);
+    font-weight: 400;
+    letter-spacing: var(--letter-spacing-decs-1);
+    line-height: var(--line-height-decs-1);
+}
+
+// HEADING level 2
+h2.heading-2 {
+    color: var(--color-white);
+    font-size: var(--font-size-heading-2);
+    font-weight: 700;
+    letter-spacing: var(--letter-spacing-heading-2);
+    line-height: var(--line-height-heading-2);
+}
+
+p.decs-2 {
+    color: var(--color-white);
+    font-size: var(--font-size-decs-2);
+    font-weight: 600;
+    letter-spacing: var(--letter-spacing-decs-2);
+    line-height: var(--line-height-decs-2);
+}
+
+// HEADING level 3
+h3.heading-3 {
+    color: var(--color-white);
+    font-size: var(--font-size-heading-3);
+    font-weight: 700;
+    letter-spacing: var(--letter-spacing-heading-3);
+    line-height: var(--line-height-heading-3);
+}
+
+p.decs-3 {
+    color: var(--color-white);
+    font-size: var(--font-size-decs-3);
+    font-weight: 400;
+    letter-spacing: var(--letter-spacing-decs-3);
+    line-height: var(--line-height-decs-3);
+}
+
+
+
+
+
+
 a.label-1 {
     color: var(--color-white);
     font-size: 0.16rem;
@@ -11,18 +67,3 @@ span.label-2 {
     font-weight: 700;
 }
 
-h1.title-h1 {
-    color: var(--color-white);
-    font-size: 0.72rem;
-    font-weight: 600;
-    letter-spacing: -.02rem;
-    line-height: .8rem;
-}
-
-p.decs-1 {
-    color: var(--color-white);
-    font-size: .24rem;
-    font-weight: 400;
-    letter-spacing: normal;
-    line-height: .4rem;
-}

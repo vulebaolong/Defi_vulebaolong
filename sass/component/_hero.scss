@@ -1,7 +1,7 @@
 .hero {
     display: flex;
-    padding-top: calc(var(--header-height) + 1rem);
-
+    padding-top: var(--header-height);
+    
     &_left {
         flex-basis: 37%;
 

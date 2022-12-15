@@ -24,6 +24,30 @@
     --wh-logo-icon: .6rem;
 
     --width-container: 11.1rem;
+
+    --font-size-heading-1: .72rem;
+    --font-size-heading-2: .36rem;
+    --font-size-heading-3: .28rem;
+
+    --font-size-decs-1: .24rem;
+    --font-size-decs-2: .16rem;
+    --font-size-decs-3: .14rem;
+
+    --letter-spacing-heading-1: -.02rem;
+    --letter-spacing-heading-2: -1%;
+    --letter-spacing-heading-3: normal;
+
+    --letter-spacing-decs-1: normal;
+    --letter-spacing-decs-2: -1%;
+    --letter-spacing-decs-3: normal;
+
+    --line-height-heading-1: .8rem;
+    --line-height-heading-2: .48rem;
+    --line-height-heading-3: .44rem;
+
+    --line-height-decs-1: .4rem;
+    --line-height-decs-2: .22rem;
+    --line-height-decs-3: .26rem;
 }
 
 *,
@@ -43,6 +67,14 @@ body {
     font-family: var(--font);
     background-color: var(--color-main-dark);
     position: relative;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+main {
+    padding-top: 10px;
 }
 
 .container {
