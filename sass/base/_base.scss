@@ -17,6 +17,8 @@
     --color-secondary-accent: #0416d2;
     
     --color-hover: #3973cf;
+
+    --color-circle: rgba(255, 255, 255, 0.08);
   
     --container-width: 11.1rem;
     --container-width-small: 8rem;
@@ -30,8 +32,17 @@
     --font-size-heading-3: .28rem;
 
     --font-size-decs-1: .24rem;
-    --font-size-decs-2: .16rem;
-    --font-size-decs-3: .14rem;
+    --font-size-decs-2: .14rem;
+    --font-size-decs-3: .12rem;
+
+    --font-weight-heading-1: 600;
+    --font-weight-heading-2: 700;
+    --font-weight-heading-3: 700;
+
+    --font-weight-decs-1: 400;
+    --font-weight-decs-2: 400;
+    --font-weight-decs-3: 600;
+
 
     --letter-spacing-heading-1: -.02rem;
     --letter-spacing-heading-2: -1%;
@@ -46,7 +57,7 @@
     --line-height-heading-3: .44rem;
 
     --line-height-decs-1: .4rem;
-    --line-height-decs-2: .22rem;
+    --line-height-decs-2: .27rem;
     --line-height-decs-3: .26rem;
 }
 

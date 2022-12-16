@@ -1,59 +1,65 @@
 // HEADING level 1
-h1.heading-1 {
+.heading_primary {
     color: var(--color-white);
     font-size: var(--font-size-heading-1);
-    font-weight: 600;
+    font-weight: var(--font-weight-heading-1);
     letter-spacing: var(--letter-spacing-heading-1);
     line-height: var(--line-height-heading-1);
+
+    &-decs {
+        color: var(--color-white);
+        font-size: var(--font-size-decs-1);
+        font-weight: var(--font-weight-decs-1);
+        letter-spacing: var(--letter-spacing-decs-1);
+        line-height: var(--line-height-decs-1);
+    }
 }
 
-p.decs-1 {
-    color: var(--color-white);
-    font-size: var(--font-size-decs-1);
-    font-weight: 400;
-    letter-spacing: var(--letter-spacing-decs-1);
-    line-height: var(--line-height-decs-1);
-}
+
 
 // HEADING level 2
-h2.heading-2 {
+.heading_secondary {
     color: var(--color-white);
     font-size: var(--font-size-heading-2);
-    font-weight: 700;
+    font-weight: var(--font-weight-heading-2);
     letter-spacing: var(--letter-spacing-heading-2);
     line-height: var(--line-height-heading-2);
+
+    &-decs {
+        color: var(--color-white);
+        font-size: var(--font-size-decs-2);
+        font-weight: var(--font-weight-decs-2);
+        letter-spacing: var(--letter-spacing-decs-2);
+        line-height: var(--line-height-decs-2);
+    }
 }
 
-p.decs-2 {
-    color: var(--color-white);
-    font-size: var(--font-size-decs-2);
-    font-weight: 600;
-    letter-spacing: var(--letter-spacing-decs-2);
-    line-height: var(--line-height-decs-2);
-}
+
 
 // HEADING level 3
-h3.heading-3 {
+.heading_tertiary {
     color: var(--color-white);
     font-size: var(--font-size-heading-3);
-    font-weight: 700;
+    font-weight: var(--font-weight-heading-3);
     letter-spacing: var(--letter-spacing-heading-3);
     line-height: var(--line-height-heading-3);
+
+    &-decs {
+        color: var(--color-white);
+        font-size: var(--font-size-decs-3);
+        font-weight: var(--font-weight-decs-3);
+        letter-spacing: var(--letter-spacing-decs-3);
+        line-height: var(--line-height-decs-3);
+    }
 }
 
-p.decs-3 {
-    color: var(--color-white);
-    font-size: var(--font-size-decs-3);
-    font-weight: 400;
-    letter-spacing: var(--letter-spacing-decs-3);
-    line-height: var(--line-height-decs-3);
-}
 
 
 
 
 
 
+.label-1,
 a.label-1 {
     color: var(--color-white);
     font-size: 0.16rem;
