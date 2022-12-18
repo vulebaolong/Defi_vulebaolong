@@ -1,0 +1,37 @@
+.grow {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+
+    h2 {
+        text-align: center;
+    }
+
+    &_index {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: .2rem;
+
+            &-value {
+                color: var(--color-white);
+                font-size: .54rem;
+                font-weight: 700;
+                letter-spacing: -1%;
+                line-height: .56rem;
+            }
+
+            &-text {
+                opacity: .7;
+            }
+        }
+
+
+
+    }
+}

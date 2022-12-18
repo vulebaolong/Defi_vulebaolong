@@ -44,7 +44,7 @@
             </ul>
         </nav>
         <div class="header_button">
-            <a class="btn btn-white label-2" href="#">
+            <a class="btn btn-white" href="#">
                 <span class="btn-white-text">Enter App</span>
             </a>
         </div>
@@ -64,11 +64,11 @@
                         </p>
                         <div class="hero_left-button">
                             <div class="hero_left-button-left">
-                                <a class="btn btn-white label-2" href="#">
+                                <a class="btn btn-white" href="#">
                                     <span class="btn-white-text">Enter App</span>
                                 </a>
                             </div>
-                            <a class="hero_left-button-right btn btn-outline label-2" href="#">
+                            <a class="hero_left-button-right btn btn-outline" href="#">
                                 <span>Read The Documentation</span>
                                 <lord-icon class="hero_left-button-right-icon" trigger="hover" target="a"
                                     src="/assets/lottie/icon/icon_btn_outline.json">
@@ -106,39 +106,183 @@
                         </div>
                     </div>
                     <div class="product_bottom">
-                        <div class="product_bottom-item product_bottom-best label-1" id="card-1">
-                            <div class="product_bottom-item-lottie">
-                                <lord-icon class="product_bottom-item-lottie-icon" trigger="morph"
+                        <div class="product_bottom-card product_bottom-best label-1" id="card-1">
+                            <div class="product_bottom-card-lottie">
+                                <lord-icon class="product_bottom-card-lottie-icon" trigger="morph"
                                     target=".product_bottom-best" src="/assets/lottie/lottie_best.json">
                                 </lord-icon>
                             </div>
-                            <div class="product_bottom-item-text">
+                            <div class="product_bottom-card-text">
                                 <span class="heading_tertiary-decs">Fresher Tranche</span>
                                 <h3 class="heading_tertiary">Best Yield</h3>
                                 <p class="heading_tertiary-decs">The flagship yield automation strategy.</p>
                                 <p class="heading_tertiary-decs">Funds optimized across multiple DeFi protocols</p>
                             </div>
-                            <div class="product_bottom-item-index">
-                                <div class="product_bottom-item-index-left">
-                                    <div class="product_bottom-item-index-left-top">
-                                        <p class="product_bottom-item-index-left-top-text heading_tertiary-decs">APY</p>
-                                        <lord-icon class="product_bottom-item-index-left-top-icon" trigger="loop-on-hover" src="/assets/lottie/icon/icon-info.json">
-                                        </lord-icon>
+                            <div class="product_bottom-card-index">
+                                <div class="product_bottom-card-index-left">
+                                    <div class="product_bottom-card-index-left-top">
+                                        <p class="product_bottom-card-index-left-top-text heading_tertiary-decs">APY</p>
+                                        <div class="product_bottom-card-index-left-top-tooltip">
+                                            <lord-icon class="product_bottom-card-index-left-top-tooltip-icon"
+                                                trigger="loop-on-hover" src="/assets/lottie/icon/icon-info.json">
+                                            </lord-icon>
+                                            <div class="product_bottom-card-index-left-top-tooltip-text">
+                                                <p>APY is based on (l) the current yield advertised by the underlying protocol, (ll) the current distribution rate of governance tokens provided by underlying lending protocols (lll) the current estimated price of governance tokens from Uniswap spot prices. (lV) IDLE token distribution is referred to the entire pool</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <p class="product_bottom-item-index-left-bottom">2.51%</p>
+                                    <p class="product_bottom-card-index-left-bottom">2.51%</p>
                                 </div>
-                                <div class="product_bottom-item-index-right">
-                                    <p class="product_bottom-item-index-right-top heading_tertiary-decs">TOKEN</p>
-                                    <div class="product_bottom-item-index-right-bottom">
-                                        <lord-icon class="product_bottom-item-index-right-bottom-icon" trigger="hover" src="/assets/lottie/icon/icon_USDT.json">
+                                <div class="product_bottom-card-index-right">
+                                    <p class="product_bottom-card-index-right-top heading_tertiary-decs">TOKEN</p>
+                                    <div class="product_bottom-card-index-right-bottom">
+                                        <lord-icon class="product_bottom-card-index-right-bottom-icon" trigger="hover"
+                                            src="/assets/lottie/icon/icon_USDT.json">
                                         </lord-icon>
-                                        <p class="product_bottom-item-index-right-bottom-text">USDT</p>
+                                        <p class="product_bottom-card-index-right-bottom-text">USDT</p>
                                     </div>
                                 </div>
                             </div>
+                            <div class="product_bottom-card-buttons">
+                                <a class="btn btn-white" href="#">
+                                    <span class="btn-white-text">Launch</span>
+                                </a>
+                                <a class="btn btn-transparent" href="#">
+                                    <span class="btn-transparent-text">Integrate</span>
+                                </a>
+                            </div>
+                            <div class="product_bottom-card-power">
+                                <p class="product_bottom-card-power-text">Powered By:</p>
+                                <div class="product_bottom-card-power-logos">
+                                    <svg class="product_bottom-card-power-logos-icon">
+                                        <use xlink:href="assets/svg/sprite.svg#icon_logo1"></use>
+                                    </svg>
+                                    <svg class="product_bottom-card-power-logos-icon">
+                                        <use xlink:href="assets/svg/sprite.svg#icon_logo2"></use>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
-                        <div class="product_bottom-protected product_bottom-item label-1 ">protected</div>
-                        <div class="product_bottom-boosted product_bottom-item label-1 ">boosted</div>
+                        <div class="product_bottom-card product_bottom-protected label-1" id="card-1">
+                            <div class="product_bottom-card-lottie">
+                                <lord-icon class="product_bottom-card-lottie-icon" trigger="morph"
+                                    target=".product_bottom-protected" src="/assets/lottie/lottie_protected.json">
+                                </lord-icon>
+                            </div>
+                            <div class="product_bottom-card-text">
+                                <span class="heading_tertiary-decs">Senior Tranche</span>
+                                <h3 class="heading_tertiary">Protected Yield</h3>
+                                <p class="heading_tertiary-decs">The innovative safeguarded strategy covered by</p>
+                                <p class="heading_tertiary-decs">the counterpart Junior Tranche</p>
+                            </div>
+                            <div class="product_bottom-card-index">
+                                <div class="product_bottom-card-index-left">
+                                    <div class="product_bottom-card-index-left-top">
+                                        <p class="product_bottom-card-index-left-top-text heading_tertiary-decs">APY</p>
+                                        <div class="product_bottom-card-index-left-top-tooltip">
+                                            <lord-icon class="product_bottom-card-index-left-top-tooltip-icon"
+                                                trigger="loop-on-hover" src="/assets/lottie/icon/icon-info.json">
+                                            </lord-icon>
+                                            <div class="product_bottom-card-index-left-top-tooltip-text">
+                                                <p>APY is based on (l) the current yield advertised by the underlying protocol, (ll) the current distribution rate of governance tokens provided by underlying lending protocols (lll) additional APY derived from staking</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="product_bottom-card-index-left-bottom">10.03%</p>
+                                </div>
+                                <div class="product_bottom-card-index-right">
+                                    <p class="product_bottom-card-index-right-top heading_tertiary-decs">TOKEN</p>
+                                    <div class="product_bottom-card-index-right-bottom">
+                                        <lord-icon class="product_bottom-card-index-right-bottom-icon" trigger="hover"
+                                            src="/assets/lottie/icon/icon_MATIC.json">
+                                        </lord-icon>
+                                        <p class="product_bottom-card-index-right-bottom-text">MATIC</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_bottom-card-buttons">
+                                <a class="btn btn-white" href="#">
+                                    <span class="btn-white-text">Launch</span>
+                                </a>
+                                <a class="btn btn-transparent" href="#">
+                                    <span class="btn-transparent-text">Integrate</span>
+                                </a>
+                            </div>
+                            <div class="product_bottom-card-power">
+                                <p class="product_bottom-card-power-text">Powered By:</p>
+                                <div class="product_bottom-card-power-logos">
+                                    <svg class="product_bottom-card-power-logos-icon">
+                                        <use xlink:href="assets/svg/sprite.svg#icon_logo3"></use>
+                                    </svg>
+                                    <svg class="product_bottom-card-power-logos-icon">
+                                        <use xlink:href="assets/svg/sprite.svg#icon_logo4"></use>
+                                    </svg>
+                                    <svg class="product_bottom-card-power-logos-icon">
+                                        <use xlink:href="assets/svg/sprite.svg#icon_logo5"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_bottom-card product_bottom-boosted label-1" id="card-1">
+                            <div class="product_bottom-card-lottie">
+                                <lord-icon class="product_bottom-card-lottie-icon" trigger="morph"
+                                    target=".product_bottom-boosted" src="/assets/lottie/lottie_boosted.json">
+                                </lord-icon>
+                            </div>
+                            <div class="product_bottom-card-text">
+                                <span class="heading_tertiary-decs">Junior Tranche</span>
+                                <h3 class="heading_tertiary">Boosted Yield</h3>
+                                <p class="heading_tertiary-decs">The forefront yield strategy amplified by the</p>
+                                <p class="heading_tertiary-decs">counterpart Senior Tranche</p>
+                            </div>
+                            <div class="product_bottom-card-index">
+                                <div class="product_bottom-card-index-left">
+                                    <div class="product_bottom-card-index-left-top">
+                                        <p class="product_bottom-card-index-left-top-text heading_tertiary-decs">APY</p>
+                                        <div class="product_bottom-card-index-left-top-tooltip">
+                                            <lord-icon class="product_bottom-card-index-left-top-tooltip-icon"
+                                                trigger="loop-on-hover" src="/assets/lottie/icon/icon-info.json">
+                                            </lord-icon>
+                                            <div class="product_bottom-card-index-left-top-tooltip-text">
+                                                <p>APY is based on (l) the current yield advertised by the underlying protocol, (ll) the current distribution rate of governance tokens provided by underlying lending protocols (lll) additional APY derived from staking</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="product_bottom-card-index-left-bottom">21.71%</p>
+                                </div>
+                                <div class="product_bottom-card-index-right">
+                                    <p class="product_bottom-card-index-right-top heading_tertiary-decs">TOKEN</p>
+                                    <div class="product_bottom-card-index-right-bottom">
+                                        <lord-icon class="product_bottom-card-index-right-bottom-icon" trigger="hover"
+                                            src="/assets/lottie/icon/icon_MATIC.json">
+                                        </lord-icon>
+                                        <p class="product_bottom-card-index-right-bottom-text">MATIC</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_bottom-card-buttons">
+                                <a class="btn btn-white" href="#">
+                                    <span class="btn-white-text">Launch</span>
+                                </a>
+                                <a class="btn btn-transparent" href="#">
+                                    <span class="btn-transparent-text">Integrate</span>
+                                </a>
+                            </div>
+                            <div class="product_bottom-card-power">
+                                <p class="product_bottom-card-power-text">Powered By:</p>
+                                <div class="product_bottom-card-power-logos">
+                                    <svg class="product_bottom-card-power-logos-icon">
+                                        <use xlink:href="assets/svg/sprite.svg#icon_logo3"></use>
+                                    </svg>
+                                    <svg class="product_bottom-card-power-logos-icon">
+                                        <use xlink:href="assets/svg/sprite.svg#icon_logo4"></use>
+                                    </svg>
+                                    <svg class="product_bottom-card-power-logos-icon">
+                                        <use xlink:href="assets/svg/sprite.svg#icon_logo5"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
