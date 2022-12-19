@@ -410,6 +410,11 @@ section {
     right: 0;
     width: 20%;
     z-index: -1; }
+  .decor_ellipses-3 {
+    top: 8rem;
+    right: 0;
+    width: 50%;
+    z-index: -1; }
   .decor_circle-1 {
     position: absolute;
     top: -0.9rem;
@@ -434,6 +439,49 @@ section {
       height: 13.5rem;
       border: 0.02rem solid var(--color-circle);
       border-radius: 50%; }
+  .decor_circle-2 {
+    position: absolute;
+    top: 14.2rem;
+    right: 4.2rem; }
+    .decor_circle-2-item {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .decor_circle-2-1 {
+      width: 9rem;
+      height: 9rem;
+      border: 0.02rem solid var(--color-circle);
+      border-radius: 50%; }
+    .decor_circle-2-2 {
+      width: 13.2rem;
+      height: 13.2rem;
+      border: 0.02rem solid var(--color-circle);
+      border-radius: 50%; }
+
+.grow {
+  display: flex;
+  flex-direction: column;
+  gap: .7rem; }
+  .grow h2 {
+    text-align: center; }
+  .grow_index {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; }
+    .grow_index-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .2rem; }
+      .grow_index-item-value {
+        color: var(--color-white);
+        font-size: .54rem;
+        font-weight: 700;
+        letter-spacing: -1%;
+        line-height: .56rem; }
+      .grow_index-item-text {
+        opacity: .7; }
 
 :root {
   --font: 'Open Sans', sans-serif;

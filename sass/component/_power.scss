@@ -1,0 +1,43 @@
+.power {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+
+    &_top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .2rem;
+
+        &-decs {
+            text-align: center;
+            width: 50%;
+            opacity: .8;
+            line-height: 0.33rem;
+        }
+    }
+
+    &_bottom {
+        display: flex;
+        flex-wrap: wrap;
+
+        &-item {
+            flex-basis: 33.33333333%;
+            text-align: center;
+            padding: 0 0.4rem;
+
+            &-icon {
+                width: .8rem;
+                height: .8rem;
+            }
+
+            h3 {
+                font-size: .2rem;
+            }
+
+            p {
+                opacity: .8;
+            }
+        }
+    }
+}
