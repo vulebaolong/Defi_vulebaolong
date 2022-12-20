@@ -42,7 +42,7 @@
         }
 
         &-5 {
-            top: 33rem;
+            top: 31.2rem;
             right: 0;
             width: 100%;
         }
@@ -57,6 +57,12 @@
             top: 41rem;
             right: 0;
             width: 50%;
+        }
+
+        &-8 {
+            top: 54rem;
+            right: 0;
+            width: 25%;
         }
     }
 
@@ -145,6 +151,33 @@
         &-2 {
             width: 13.2rem;
             height: 13.2rem;
+            border: 0.02rem solid var(--color-circle);
+            border-radius: 50%;
+        }
+    }
+
+    &_circle-4 {
+        position: absolute;
+        top: 53rem;
+        right: 10%;
+
+        &-item {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &-1 {
+            width: 6rem;
+            height: 6rem;
+            border: 0.02rem solid var(--color-circle);
+            border-radius: 50%;
+        }
+
+        &-2 {
+            width: 11rem;
+            height: 10rem;
             border: 0.02rem solid var(--color-circle);
             border-radius: 50%;
         }

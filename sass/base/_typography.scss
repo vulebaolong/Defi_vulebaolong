@@ -53,9 +53,22 @@
     }
 }
 
+// HEADING level 4
+.heading_quaternary {
+    color: var(--color-white);
+    font-size: var(--font-size-heading-4);
+    font-weight: var(--font-weight-heading-4);
+    letter-spacing: var(--letter-spacing-heading-4);
+    line-height: var(--line-height-heading-4);
+}
 
-
-
+.text_index-1 {
+    color: var(--color-white);
+    font-size: var(--font-size-textindex-1);
+    font-weight: var(--font-weight-textindex-1);
+    letter-spacing: -1%;
+    line-height: var(--line-height-textindex-1);
+}
 
 
 
@@ -66,10 +79,5 @@ a.label-1 {
     font-weight: 600;
 }   
 
-a.label-2,
-span.label-2 {
-    color: var(--color-white);
-    font-size: 0.14rem;
-    font-weight: 700;
-}
+
 

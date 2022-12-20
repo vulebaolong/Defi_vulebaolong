@@ -30,38 +30,55 @@
 
     --width-container: 11.1rem;
 
+    --padding-section: 1rem;
+
     --font-size-heading-1: .72rem;
     --font-size-heading-2: .36rem;
     --font-size-heading-3: .28rem;
+    --font-size-heading-4: .2rem;
 
     --font-size-decs-1: .24rem;
     --font-size-decs-2: .14rem;
     --font-size-decs-3: .12rem;
+    --font-size-decs-4: .12rem;
+
+    --font-size-textindex-1: .54rem;
 
     --font-weight-heading-1: 600;
     --font-weight-heading-2: 700;
     --font-weight-heading-3: 700;
+    --font-weight-heading-4: 600;
 
     --font-weight-decs-1: 400;
     --font-weight-decs-2: 400;
     --font-weight-decs-3: 500;
+    --font-weight-decs-4: 400;
 
+    --font-weight-textindex-1: 700;
 
     --letter-spacing-heading-1: -.02rem;
     --letter-spacing-heading-2: -1%;
     --letter-spacing-heading-3: normal;
+    --letter-spacing-heading-4: normal;
 
     --letter-spacing-decs-1: normal;
     --letter-spacing-decs-2: -1%;
     --letter-spacing-decs-3: normal;
+    --letter-spacing-decs-4: normal;
+
+    --letter-spacing-textindex-1: -1%;
 
     --line-height-heading-1: .8rem;
     --line-height-heading-2: .48rem;
     --line-height-heading-3: .44rem;
+    --line-height-heading-4: .32rem;
 
     --line-height-decs-1: .4rem;
     --line-height-decs-2: .27rem;
     --line-height-decs-3: .26rem;
+    --line-height-decs-3: .14rem;
+
+    --line-height-textindex-1: .56rem;
 }
 
 *,
@@ -89,6 +106,13 @@ body {
 
 main {
     padding-top: 10px;
+    position: relative;
+    z-index: 0;
+}
+
+section {
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);
 }
 
 .container {
