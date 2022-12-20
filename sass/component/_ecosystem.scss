@@ -1,0 +1,36 @@
+.ecosystem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    &_top {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.2rem;
+    }
+
+    &_bottom {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: .8rem;
+
+
+        &-icon {
+            flex-basis: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover img {
+                opacity: .7;
+            }
+
+            img {
+                width: 60%;
+                transition: all .3s;
+            }
+        }
+    }
+}

@@ -54,6 +54,7 @@
                     padding-right: .25rem;
                     border-radius: .08rem;
                     gap: .1rem;
+                    text-decoration: none;
                     transition: all .3s;
 
                     &:hover {
@@ -109,6 +110,29 @@
             }
         }
 
-        &_right {}
+        &_right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            &-img {
+                margin: 0.9rem 0 0rem;
+                picture {
+                }
+                img {
+                    width: 100%;
+                }
+            }
+
+            &-text {
+                color: var(--color-white);
+                font-size: .2rem;
+                font-weight: 600;
+                letter-spacing: -1%;
+                line-height: .32rem;
+                margin-bottom: auto;
+            }
+        }
     }
 }
