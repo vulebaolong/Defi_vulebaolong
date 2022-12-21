@@ -298,7 +298,6 @@ a.label-1 {
       flex-direction: column;
       align-items: center;
       border-radius: 0.14rem;
-      overflow: hidden;
       transition: all .3s; }
       .product_bottom-card::before {
         content: '';
@@ -310,7 +309,8 @@ a.label-1 {
         background-image: var(--color-product-card-bg);
         z-index: -1;
         opacity: 0;
-        transition: all 0.3s; }
+        transition: all 0.3s;
+        border-radius: 0.14rem; }
       .product_bottom-card:hover::before {
         opacity: 1; }
       .product_bottom-card:hover .product_bottom-card-power-logos-icon {
@@ -415,7 +415,8 @@ a.label-1 {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: -1; }
+  z-index: -1;
+  overflow: hidden; }
   .decor_ellipses-item {
     position: absolute;
     z-index: -1; }
@@ -446,7 +447,7 @@ a.label-1 {
     left: 0;
     width: 50%; }
   .decor_ellipses-7 {
-    top: 41rem;
+    top: 39rem;
     right: 0;
     width: 50%; }
   .decor_ellipses-8 {
@@ -839,12 +840,14 @@ a.label-1 {
 
 html {
   font-size: 6.94444vw;
-  -webkit-text-size-adjust: none; }
+  -webkit-text-size-adjust: none;
+  width: 100%; }
 
 body {
   font-family: var(--font);
   background-color: var(--color-main-dark);
-  position: relative; }
+  position: relative;
+  width: 100vw; }
   body::-webkit-scrollbar {
     display: none; }
 

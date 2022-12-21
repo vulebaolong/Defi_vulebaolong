@@ -1,4 +1,3 @@
-
 :root {
     --font: 'Open Sans', sans-serif;
     --font-icon: 'Work Sans', sans-serif;
@@ -15,14 +14,14 @@
     --color-underline: #d9d9d9;
     --color-main-accent: #9caff6;
     --color-secondary-accent: #0416d2;
-    
+
     --color-hover: #3973cf;
 
     --color-circle: rgba(255, 255, 255, 0.08);
 
     --color-product-card-bg: linear-gradient(to top, #3643b9 -35.85%, #041079 112.68%);
 
-  
+
     --container-width: 11.1rem;
     --container-width-small: 8rem;
     --header-height: .76rem;
@@ -92,12 +91,15 @@
 html {
     font-size: 6.94444vw;
     -webkit-text-size-adjust: none;
+    width: 100%;
+
 }
 
 body {
     font-family: var(--font);
     background-color: var(--color-main-dark);
     position: relative;
+    width: 100vw;
 
     &::-webkit-scrollbar {
         display: none;
