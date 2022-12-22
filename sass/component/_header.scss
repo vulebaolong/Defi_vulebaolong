@@ -60,7 +60,7 @@
                 &-text {
                     text-decoration: none;
                     opacity: .6;
-                    transition: all .3s cubic-bezier(.66,0,.34,1);
+                    transition: var(--transition);
 
                     &:hover {
                         opacity: 1;

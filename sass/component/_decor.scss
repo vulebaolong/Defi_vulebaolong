@@ -65,6 +65,20 @@
             right: 0;
             width: 25%;
         }
+
+        &-9 {
+            top: 62.5rem;
+            left: 0;
+            width: 40%;
+            transform: scaleY(1.5);
+        }
+
+        &-10 {
+            top: 62.5rem;
+            right: 0;
+            width: 40%;
+            transform: scaleY(1.5);
+        }
     }
 
     &_circle-1 {
@@ -181,6 +195,32 @@
             height: 10rem;
             border: 0.02rem solid var(--color-circle);
             border-radius: 50%;
+        }
+    }
+
+    &_circle-5 {
+        position: absolute;
+        top: 68.4rem;
+        right: 50%;
+
+        &-item {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 0.02rem solid var(--color-circle);
+            border-radius: 50%;
+            border-radius: 50%;
+        }
+
+        &-1 {
+            width: 8rem;
+            height: 8rem;
+        }
+
+        &-2 {
+            width: 12.5rem;
+            height: 12.5rem;
         }
     }
 }

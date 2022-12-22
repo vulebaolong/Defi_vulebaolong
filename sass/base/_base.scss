@@ -16,6 +16,7 @@
     --color-secondary-accent: #0416d2;
 
     --color-hover: #3973cf;
+    --color-link: #6ae4ff;
 
     --color-circle: rgba(255, 255, 255, 0.08);
 
@@ -78,6 +79,8 @@
     --line-height-decs-3: .14rem;
 
     --line-height-textindex-1: .56rem;
+
+    --transition: all .3s cubic-bezier(.66, 0, .34, 1);
 }
 
 *,
@@ -117,7 +120,16 @@ section {
     padding-bottom: var(--padding-section);
 }
 
+footer {
+    padding-top: var(--padding-section);
+}
+
 .container {
     max-width: var(--width-container);
     margin: 0 auto;
+}
+
+.a_link {
+    color: var(--color-link);
+    text-decoration: none;
 }

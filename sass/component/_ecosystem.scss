@@ -24,12 +24,12 @@
             align-items: center;
 
             &:hover img {
-                opacity: .7;
+                opacity: .6;
             }
 
             img {
                 width: 60%;
-                transition: all .3s;
+                transition: var(--transition);
             }
         }
     }

@@ -1,0 +1,95 @@
+.pioneer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &_top {
+        text-align: center;
+    }
+
+    &_bottom {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &-item {
+            flex-basis: 33.333333%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:nth-child(1) {
+                transform: translateX(.8rem);
+            }
+
+            &:nth-child(3) {
+                transform: translateX(-1rem);
+            }
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                margin-bottom: 0.8rem;
+
+                .pioneer_bottom-item-box {
+                    width: calc(var(--container-width) / 4);
+                }
+            }
+
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6),
+            &:nth-child(7) {
+                flex-basis: 20%;
+                flex-grow: 1;
+            }
+
+            &-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 75%;
+                opacity: 1;
+                transition: var(--transition);
+
+                &:hover {
+                    opacity: .6;
+                }
+
+                picture {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*
+pioneer_bottom-item 
+dùng để bọc bên ngoài
+với element 1,2,3 chia 33%
+với element 4,5,6,7 chia 20%
+
+pioneer_bottom-item-box
+bên trong
+với element 1,2,3 lấy tổng chiều rộng chia 4 để canh width lại bằng với element 4,5,6,7
+
+=> tất cả chiều rộng element 1,2,3,4,5,6,7 đều bằng nhau nên kích cỡ icon bằng nhau
+
+img và picture set width 100% để chỉ set width ở thẻ a tủy ý
+để khi hover thẻ a sẽ không bị thừa mà vừa khít với icon
+*/
