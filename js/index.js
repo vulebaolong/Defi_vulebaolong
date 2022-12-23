@@ -37,7 +37,7 @@ const headerEl = document.querySelector('.header')
 
 function handler(scrollPos) {
     window_scrollY = window.scrollY;
-    // console.log(window_scrollY);
+    console.log(window_scrollY);
     if (window_scrollY) {
         // console.log('thêm');
         headerEl.classList.add('sticky')

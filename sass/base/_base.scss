@@ -26,10 +26,14 @@
     --container-width: 11.1rem;
     --container-width-small: 8rem;
     --header-height: .76rem;
-    --wh-logo-icon: .6rem;
-
+    
     --width-container: 11.1rem;
-
+    
+    --wh-logo-icon: .6rem;
+    --font-size-logo: .3rem;
+    --translateX-logo-text: -.1rem;
+    --translateY-logo-text: 0rem;
+    
     --padding-section: 1rem;
 
     --font-size-heading-1: .72rem;
@@ -43,6 +47,8 @@
     --font-size-decs-4: .12rem;
 
     --font-size-textindex-1: .54rem;
+    --font-size-nav: .16rem;
+    --font-weight-nav: 600;
 
     --font-weight-heading-1: 600;
     --font-weight-heading-2: 700;
@@ -94,7 +100,8 @@
 html {
     font-size: 6.94444vw;
     -webkit-text-size-adjust: none;
-    width: 100%;
+    // width: 100%;
+    width: 100vw;
 
 }
 
@@ -110,7 +117,6 @@ body {
 }
 
 main {
-    padding-top: 10px;
     position: relative;
     z-index: 0;
 }
@@ -132,4 +138,8 @@ footer {
 .a_link {
     color: var(--color-link);
     text-decoration: none;
+}
+
+.M {
+    display: none;
 }

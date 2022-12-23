@@ -25,23 +25,44 @@
 
 <body>
     <header class="header">
-        <div class="header_logo">
-            <div class="header_logo_box">
-                <lord-icon class="header_logo_box-icon" trigger="loop" delay="5000"
+        <div class="logo">
+            <div class="logo_box">
+                <lord-icon class="logo_box-icon" trigger="loop" delay="5000"
                     src="/assets/lottie/lottie_logo.json">
                 </lord-icon>
             </div>
-            <span class="header_logo-text">DeFi</span>
+            <span class="logo-text">DeFi</span>
         </div>
         <nav class="header_nav">
+            <div class="M header_nav_mobile-1">
+                <div class="logo">
+                    <div class="logo_box">
+                        <lord-icon class="logo_box-icon" trigger="loop" delay="5000"
+                            src="/assets/lottie/lottie_logo.json">
+                        </lord-icon>
+                    </div>
+                    <span class="logo-text">DeFi</span>
+                </div>
+                <lord-icon class="header_nav_mobile-1-close" trigger="hover" delay="5000"
+                    src="/assets/lottie/lottie_close.json"
+                    >
+                </lord-icon>
+            </div>
+
             <ul class="header_nav-list ">
-                <li class="header_nav-list-item"><a href="#" class="header_nav-list-item-text label-1">Analytics</a>
+                <li class="header_nav-list-item"><a href="#" class="header_nav-list-item-text">Analytics</a>
                 </li>
-                <li class="header_nav-list-item"><a href="#" class="header_nav-list-item-text label-1">Docs</a></li>
-                <li class="header_nav-list-item"><a href="#" class="header_nav-list-item-text label-1">Governance</a>
+                <li class="header_nav-list-item"><a href="#" class="header_nav-list-item-text">Docs</a></li>
+                <li class="header_nav-list-item"><a href="#" class="header_nav-list-item-text">Governance</a>
                 </li>
-                <li class="header_nav-list-item"><a href="#" class="header_nav-list-item-text label-1">Security</a></li>
+                <li class="header_nav-list-item"><a href="#" class="header_nav-list-item-text">Security</a></li>
             </ul>
+
+            <div class="M header_nav_mobile-2">
+                <a class="btn btn-white" href="#">
+                    <span class="btn-white-text">Enter App</span>
+                </a>
+            </div>
         </nav>
         <div class="header_button">
             <a class="btn btn-white" href="#">
@@ -525,21 +546,31 @@
                                 src="/assets/lottie/icon/generation_icon1.json">
                             </lord-icon>
                             <h4 class="heading_quaternary">DeFi <br> developers</h4>
-                            <p class="heading_tertiary-decs">Avoid the need to integrate multiple yield sources, and achieve the best risk adjusted yield with just one integration. Check the <a class="a_link" href="#">documentation</a> for more info or get help at #dev-support <a class="a_link" href="#">Discord</a> channel</p>
+                            <p class="heading_tertiary-decs">Avoid the need to integrate multiple yield sources, and
+                                achieve the best risk adjusted yield with just one integration. Check the <a
+                                    class="a_link" href="#">documentation</a> for more info or get help at #dev-support
+                                <a class="a_link" href="#">Discord</a> channel</p>
                         </div>
                         <div class="generation_bottom-item">
                             <lord-icon class="generation_bottom-item-icon" trigger="loop-on-hover"
                                 src="/assets/lottie/icon/generation_icon2.json">
                             </lord-icon>
                             <h4 class="heading_quaternary">Institutionals and DAO treasury managers</h4>
-                            <p class="heading_tertiary-decs">Perfect treasury diversification and yield automation solution for any risk profile. Idle's strategies are scalable as the size of the deposit doesn't affect the sustainability of the yields. The performance can be tracked in real-time. Visit the <a class="a_link" href="#">dashboard</a> or fill out <a class="a_link" href="#">this form</a></p>
+                            <p class="heading_tertiary-decs">Perfect treasury diversification and yield automation
+                                solution for any risk profile. Idle's strategies are scalable as the size of the deposit
+                                doesn't affect the sustainability of the yields. The performance can be tracked in
+                                real-time. Visit the <a class="a_link" href="#">dashboard</a> or fill out <a
+                                    class="a_link" href="#">this form</a></p>
                         </div>
                         <div class="generation_bottom-item">
                             <lord-icon class="generation_bottom-item-icon" trigger="loop-on-hover"
                                 src="/assets/lottie/icon/generation_icon3.json">
                             </lord-icon>
                             <h4 class="heading_quaternary">Individual <br> DeFi users</h4>
-                            <p class="heading_tertiary-decs">You want the best yield for your savings? Reliable security? Not to think about your yields on a day-to-day basis? All of that is available in one place. Visit the <a class="a_link" href="#">dashboard</a>, connect your wallet and deposit your funds today!</p>
+                            <p class="heading_tertiary-decs">You want the best yield for your savings? Reliable
+                                security? Not to think about your yields on a day-to-day basis? All of that is available
+                                in one place. Visit the <a class="a_link" href="#">dashboard</a>, connect your wallet
+                                and deposit your funds today!</p>
                         </div>
                     </div>
                 </div>
@@ -569,9 +600,9 @@
                         <div class="community_bottom-item">
                             <p class="text_index-1">22</p>
                             <p class="community_bottom-item-text heading_secondary-decs">Proposals</p>
-                        </div>                        
+                        </div>
                     </div>
-                    <div class="community_buttons">                        
+                    <div class="community_buttons">
                         <a class="btn btn-transparent" href="#">
                             <span class="btn-transparent-text">Visit Forum</span>
                         </a>
@@ -624,7 +655,7 @@
                             </div>
                         </div>
                         <div class="pioneer_bottom-item">
-                           <div class="pioneer_bottom-item-box">
+                            <div class="pioneer_bottom-item-box">
                                 <a href="#">
                                     <picture>
                                         <source srcset="/assets/img/pioneer_logo4.webp" type="image/webp">
@@ -632,7 +663,7 @@
                                         <img src="#" alt="pioneer_logo4">
                                     </picture>
                                 </a>
-                           </div>
+                            </div>
                         </div>
                         <div class="pioneer_bottom-item">
                             <div class="pioneer_bottom-item-box">
@@ -678,23 +709,25 @@
             <div class="footer">
                 <div class="footer_top">
                     <div class="footer_top_content">
-                        <div class="footer_top_content-logo">
-                            <div class="footer_top_content-logo_box">
-                                <lord-icon class="footer_top_content-logo_box-icon" trigger="loop" delay="5000"
+                        <div class="logo">
+                            <div class="logo_box">
+                                <lord-icon class="logo_box-icon" trigger="loop" delay="5000"
                                     src="/assets/lottie/lottie_logo.json">
                                 </lord-icon>
                             </div>
-                            <span class="footer_top_content-logo-text">DeFi</span>
+                            <span class="logo-text">DeFi</span>
                         </div>
                         <form class="footer_top_content-form">
-                            <input class="footer_top_content-form-email" type="email" placeholder="Enter your e-mail" required>
+                            <input class="footer_top_content-form-email" type="email" placeholder="Enter your e-mail"
+                                required>
                             <button class="btn btn-white" type="submit">
                                 <span class="btn-white-text">Get Updates</span>
                             </button>
                         </form>
-                        <p class="footer_top_content-text">By opting-in you agree to our <a class="a_link" href="#">privacy policy</a></p>
+                        <p class="footer_top_content-text">By opting-in you agree to our <a class="a_link"
+                                href="#">privacy policy</a></p>
                     </div>
-                    <ul class="footer_top-list">                        
+                    <ul class="footer_top-list">
                         <li class="footer_top-list-heading">About</li>
                         <li class="footer_top-list-item"><a href="#">Team</a></li>
                         <li class="footer_top-list-item"><a href="#">How Idle works</a></li>
@@ -702,13 +735,13 @@
                         <li class="footer_top-list-item"><a href="#">Analytics</a></li>
                         <li class="footer_top-list-item"><a href="#">Security</a></li>
                     </ul>
-                    <ul class="footer_top-list">                        
+                    <ul class="footer_top-list">
                         <li class="footer_top-list-heading">Governance</li>
                         <li class="footer_top-list-item"><a href="#">Dashboard</a></li>
                         <li class="footer_top-list-item"><a href="#">Forum</a></li>
                         <li class="footer_top-list-item"><a href="#">Snapshot</a></li>
                     </ul>
-                    <ul class="footer_top-list">                        
+                    <ul class="footer_top-list">
                         <li class="footer_top-list-heading">Community</li>
                         <li class="footer_top-list-item"><a href="#">Twitter</a></li>
                         <li class="footer_top-list-item"><a href="#">Telegram</a></li>
@@ -716,7 +749,7 @@
                         <li class="footer_top-list-item"><a href="#">Linkedin</a></li>
                         <li class="footer_top-list-item"><a href="#">Medium</a></li>
                     </ul>
-                    <ul class="footer_top-list">                        
+                    <ul class="footer_top-list">
                         <li class="footer_top-list-heading">Developers</li>
                         <li class="footer_top-list-item"><a href="#">Documentation</a></li>
                         <li class="footer_top-list-item"><a href="#">GitHub</a></li>
@@ -724,7 +757,7 @@
                     </ul>
                 </div>
                 <div class="footer_bottom">
-                    <ul class="footer_bottom-list">                        
+                    <ul class="footer_bottom-list">
                         <li class="footer_bottom-list-copy">© 2022 Idle Labs Inc</li>
                         <li class="footer_bottom-list-item"><a href="#">Brand assets</a></li>
                         <li class="footer_bottom-list-item"><a href="#">Terms of Service</a></li>

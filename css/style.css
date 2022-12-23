@@ -116,26 +116,6 @@ a.label-1 {
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     background: rgba(4, 15, 55, 0.5); }
-  .header_logo {
-    width: 1.5rem;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; }
-    .header_logo-text {
-      color: var(--color-white);
-      font-size: 0.3rem;
-      font-family: var(--font-icon);
-      transform: translateX(-0.1rem); }
-    .header_logo_box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: var(--wh-logo-icon);
-      width: var(--wh-logo-icon); }
-      .header_logo_box-icon {
-        width: 100%;
-        height: 100%; }
   .header_nav-list {
     display: flex;
     align-items: center;
@@ -146,7 +126,10 @@ a.label-1 {
       .header_nav-list-item-text {
         text-decoration: none;
         opacity: .6;
-        transition: var(--transition); }
+        transition: var(--transition);
+        color: var(--color-white);
+        font-size: var(--font-size-nav);
+        font-weight: var(--font-weight-nav); }
         .header_nav-list-item-text:hover {
           opacity: 1; }
   .header_button {
@@ -894,26 +877,6 @@ img và picture set width 100% để chỉ set width ở thẻ a tủy ý
       justify-content: flex-start;
       flex-basis: 33%;
       margin-right: 0.8rem; }
-      .footer_top_content-logo {
-        width: 1.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        transform: translate(-0.2rem, -0.1rem); }
-        .footer_top_content-logo-text {
-          color: var(--color-white);
-          font-size: 0.3rem;
-          font-family: var(--font-icon);
-          transform: translateX(-0.1rem); }
-        .footer_top_content-logo_box {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: var(--wh-logo-icon);
-          width: var(--wh-logo-icon); }
-          .footer_top_content-logo_box-icon {
-            width: 100%;
-            height: 100%; }
       .footer_top_content-form {
         display: flex;
         align-items: stretch;
@@ -986,6 +949,27 @@ img và picture set width 100% để chỉ set width ở thẻ a tủy ý
       outline: none;
       text-decoration: none; }
 
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transform: translateX(-0.1rem); }
+  .logo-text {
+    color: var(--color-white);
+    font-size: var(--font-size-logo);
+    font-family: var(--font-icon);
+    transform: translate(var(--translateX-logo-text), var(--translateY-logo-text)); }
+  .logo_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--wh-logo-icon);
+    width: var(--wh-logo-icon); }
+    .logo_box-icon {
+      transform: rotate(60deg);
+      width: 100%;
+      height: 100%; }
+
 :root {
   --font: 'Open Sans', sans-serif;
   --font-icon: 'Work Sans', sans-serif;
@@ -1007,8 +991,11 @@ img và picture set width 100% để chỉ set width ở thẻ a tủy ý
   --container-width: 11.1rem;
   --container-width-small: 8rem;
   --header-height: .76rem;
-  --wh-logo-icon: .6rem;
   --width-container: 11.1rem;
+  --wh-logo-icon: .6rem;
+  --font-size-logo: .3rem;
+  --translateX-logo-text: -.1rem;
+  --translateY-logo-text: 0rem;
   --padding-section: 1rem;
   --font-size-heading-1: .72rem;
   --font-size-heading-2: .36rem;
@@ -1019,6 +1006,8 @@ img và picture set width 100% để chỉ set width ở thẻ a tủy ý
   --font-size-decs-3: .12rem;
   --font-size-decs-4: .12rem;
   --font-size-textindex-1: .54rem;
+  --font-size-nav: .16rem;
+  --font-weight-nav: 600;
   --font-weight-heading-1: 600;
   --font-weight-heading-2: 700;
   --font-weight-heading-3: 700;
@@ -1058,7 +1047,7 @@ img và picture set width 100% để chỉ set width ở thẻ a tủy ý
 html {
   font-size: 6.94444vw;
   -webkit-text-size-adjust: none;
-  width: 100%; }
+  width: 100vw; }
 
 body {
   font-family: var(--font);
@@ -1069,7 +1058,6 @@ body {
     display: none; }
 
 main {
-  padding-top: 10px;
   position: relative;
   z-index: 0; }
 
@@ -1087,3 +1075,57 @@ footer {
 .a_link {
   color: var(--color-link);
   text-decoration: none; }
+
+.M {
+  display: none; }
+
+/* 992px => 62em => Medium devices (tablets, less than 992px)*/
+@media (max-width: 992px) {
+  :root {
+    --font-size-nav: .32rem;
+    --wh-logo-icon: .8rem;
+    --font-size-logo: .5rem;
+    --translateX-logo-text: -.1rem;
+    --translateY-logo-text: -.05rem; }
+  html {
+    font-size: 13.02083vw; }
+  .container {
+    width: 100%; }
+  .M {
+    display: flex; }
+  .header_nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(8, 19, 54, 0.9);
+    z-index: 2;
+    display: flex;
+    flex-direction: column; }
+    .header_nav_mobile-1 {
+      align-items: center;
+      justify-content: space-between;
+      padding: .5rem .5rem; }
+    .header_nav-list {
+      flex-direction: column;
+      align-items: flex-start; }
+  .hero_section {
+    padding-top: unset; }
+  .hero {
+    flex-direction: column-reverse;
+    padding-top: unset; }
+    .hero_right-video {
+      width: 100%;
+      transform: unset; }
+  .product_bottom {
+    flex-direction: column; }
+  .secured_bottom {
+    flex-direction: column; }
+  .footer_top {
+    flex-direction: column; } }
+
+/* 768px => 48em => Small devices (landscape phones, less than 768px)*/
+@media (max-width: 768px) {
+  html {
+    font-size: 13.02083vw; } }

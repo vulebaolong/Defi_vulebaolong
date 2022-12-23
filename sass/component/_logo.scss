@@ -1,0 +1,27 @@
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transform: translateX(-0.1rem);
+
+    &-text {
+        color: var(--color-white);
+        font-size: var(--font-size-logo);
+        font-family: var(--font-icon);
+        transform: translate(var(--translateX-logo-text), var(--translateY-logo-text));
+    }
+
+    &_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: var(--wh-logo-icon);
+        width: var(--wh-logo-icon);
+
+        &-icon {
+            transform: rotate(60deg);
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
