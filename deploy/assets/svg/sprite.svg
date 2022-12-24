@@ -55,5 +55,7 @@
     <symbol id="icon_audit_arrow" fill="none" height="16" viewBox="0 0 12 16" width="12">
         <path clip-rule="evenodd" d="M2.828 13.641 4 14.813l5.656-5.657L4 3.5 2.828 4.671l4.485 4.485z" fill="#fff" fill-rule="evenodd"></path>
     </symbol>
+    <svg id="icon_nav_open" viewBox="0 0 24 24"><g data-name="Layer 2"><g data-name="menu"><rect width="18" height="2" x="3" y="11" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="16" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="6" rx=".95" ry=".95"/></g></g>
+    </svg>
 </svg>
 
