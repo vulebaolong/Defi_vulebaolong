@@ -29,7 +29,7 @@ function handler(scrollPos) {
 }
 
 function openCloseNav(params) {
-    element[`header_navEl`].classList.toggle('close')
+    element[`header_navEl`].classList.toggle('open')
 }
 
 document.addEventListener("scroll", handler);

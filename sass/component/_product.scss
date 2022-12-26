@@ -48,7 +48,8 @@
         }
 
         &-card {
-            width: 3.57rem;
+            width: var(--width-card);
+            min-width: var(--width-card);
             background-color: var(--color-secondary-dark);
             position: relative;
             z-index: 0;
