@@ -2,7 +2,7 @@
 .btn:link,
 .btn:visited {
     text-decoration: none;
-    padding: 0.1rem 0.24rem;
+    padding: var(--padding-btn-white);
     white-space: nowrap;
     border-radius: 0.04rem;
     transition: all .3s;
@@ -15,7 +15,7 @@
     cursor: pointer;
 
     &.btn-white {
-        font-size: .14rem;
+        font-size: var(--font-size-btn-white);
         font-weight: 700;
         letter-spacing: -2%;
         line-height: .2rem;
@@ -56,7 +56,7 @@
         background-color: rgba(0, 0, 0, 0);
         color: var(--color-white);
         border: 1px solid rgba(255, 255, 255, 0.3);
-        font-size: .14rem;
+        font-size: var(--font-size-btn-white);
         font-weight: 700;
         letter-spacing: -2%;
         line-height: .19rem;
@@ -70,7 +70,7 @@
     &.btn-outline {
         display: flex;
         color: var(--color-white);
-        font-size: .14rem;
+        font-size: var(--font-size-btn-outline);
         font-weight: 700;
         padding: 0;
     }

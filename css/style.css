@@ -107,7 +107,7 @@ a.label-1 {
   justify-content: space-between;
   align-items: center;
   height: var(--header-height);
-  padding: 0.17rem 0.52rem;
+  padding: var(--padding-header);
   position: fixed;
   z-index: 10;
   width: 100%;
@@ -141,7 +141,7 @@ a.label-1 {
 .btn:link,
 .btn:visited {
   text-decoration: none;
-  padding: 0.1rem 0.24rem;
+  padding: var(--padding-btn-white);
   white-space: nowrap;
   border-radius: 0.04rem;
   transition: all .3s;
@@ -155,7 +155,7 @@ a.label-1 {
   .btn.btn-white,
   .btn:link.btn-white,
   .btn:visited.btn-white {
-    font-size: .14rem;
+    font-size: var(--font-size-btn-white);
     font-weight: 700;
     letter-spacing: -2%;
     line-height: .2rem;
@@ -196,7 +196,7 @@ a.label-1 {
     background-color: rgba(0, 0, 0, 0);
     color: var(--color-white);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    font-size: .14rem;
+    font-size: var(--font-size-btn-white);
     font-weight: 700;
     letter-spacing: -2%;
     line-height: .19rem; }
@@ -210,7 +210,7 @@ a.label-1 {
   .btn:visited.btn-outline {
     display: flex;
     color: var(--color-white);
-    font-size: .14rem;
+    font-size: var(--font-size-btn-outline);
     font-weight: 700;
     padding: 0; }
 
@@ -998,6 +998,7 @@ img và picture set width 100% để chỉ set width ở thẻ a tủy ý
   --font-size-logo: .3rem;
   --translateX-logo-text: -.1rem;
   --translateY-logo-text: 0rem;
+  --padding-header: 0.17rem 0.52rem;
   --padding-section: 1rem;
   --font-size-heading-1: .72rem;
   --font-size-heading-2: .36rem;
@@ -1010,6 +1011,9 @@ img và picture set width 100% để chỉ set width ở thẻ a tủy ý
   --font-size-textindex-1: .54rem;
   --font-size-nav: .16rem;
   --font-weight-nav: 600;
+  --font-size-btn-white: .14rem;
+  --padding-btn-white: 0.1rem 0.24rem;
+  --font-size-btn-outline: .14rem;
   --font-weight-heading-1: 600;
   --font-weight-heading-2: 700;
   --font-weight-heading-3: 700;
@@ -1384,3 +1388,41 @@ footer {
 @media (max-width: 768px) {
   html {
     font-size: 13.02083vw; } }
+
+/* 576px => 36em => X-Small devices (portrait phones, less than 576px)*/
+@media (max-width: 576px) {
+  :root {
+    --padding-header: 0.17rem 0.32rem;
+    --font-size-btn-white: .18rem;
+    --padding-btn-white: 0.2rem 0.34rem;
+    --font-size-btn-outline: .18rem;
+    --font-size-decs-2: 0.18rem;
+    --font-size-heading-2: 0.46rem;
+    --font-size-heading-3: 0.38rem;
+    --font-size-decs-3: 0.15rem;
+    --line-height-decs-3: 0.24rem; }
+  html {
+    font-size: 19.66667vw; }
+  .header_button a.btn.btn-white {
+    display: none; }
+  .hero_left {
+    padding: 0 .5rem; }
+    .hero_left-button {
+      flex-direction: column;
+      align-items: center; }
+  .power_bottom-item {
+    flex-basis: 100%;
+    text-align: unset; }
+  .product {
+    gap: 0.4rem; }
+    .product_top {
+      gap: 0.3rem;
+      text-align: start;
+      padding: 0 0.5rem; }
+      .product_top-left-decs {
+        font-size: 0.18rem; }
+    .product_bottom {
+      padding: 0 0.545rem 0.5rem;
+      padding-top: 0.8rem; }
+      .product_bottom-card-text h3 {
+        padding: 0.08rem 0 0.2rem; } }
