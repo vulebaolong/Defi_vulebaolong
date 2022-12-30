@@ -46,7 +46,7 @@
 
                 &-email {
                     font-family: inherit;
-                    font-size: .14rem;
+                    font-size: var(--footer-fontsize-input);
                     font-weight: 600;
 
                     width: 1.9rem;
@@ -57,12 +57,14 @@
                     color: var(--color-white);
                     background: rgba(70, 77, 102, .15);
                     flex: 1;
+                    padding-top: var(--footer-pading-top-bottom);
+                    padding-bottom: var(--footer-pading-top-bottom);
                 }
 
             }
 
             &-text {
-                font-size: .11rem;
+                font-size: var(--footer-topcontent-text);
                 line-height: .28rem;
                 color: var(--color-white);
                 font-weight: 600;
@@ -87,7 +89,7 @@
             &-heading {
                 margin-bottom: .14rem;
                 color: var(--color-white);
-                font-size: .15rem;
+                font-size: var(--footer-toplist-heading);
                 font-weight: 700;
                 letter-spacing: -1%;
                 line-height: .3rem;
@@ -99,7 +101,7 @@
                 a {
                     display: inline-block;
                     color: var(--color-white);
-                    font-size: .14rem;
+                    font-size: var(--footer-toplist-item-a);
                     font-weight: 600;
                     letter-spacing: -1%;
                     line-height: .24rem;
@@ -118,7 +120,7 @@
             display: flex;
             align-items: center;
             gap: .5rem;
-            font-size: .12rem;
+            font-size: var(--footer-bottom-list);
 
             &-copy {
                 color: var(--color-white);

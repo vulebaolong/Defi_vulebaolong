@@ -19,6 +19,7 @@
         --font-size-textindex-1: 0.45rem;
         --width-pioneer_bottom-item-box: 100vw;
         --width-card: 4rem;
+        --width-container: 89%;
     }
 
     html {
@@ -102,7 +103,7 @@
         }
 
         &_mobile-2 {
-            margin-top: .5rem;
+            margin: .5rem 0;
 
             .btn-white {
                 flex: 1;
@@ -117,7 +118,6 @@
 
     .header_nav.open {
         transform: translateY(0);
-
     }
 
     .hero_section {
@@ -135,6 +135,10 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
+
+            &-description {
+                padding: 0.29rem 0 0.52rem;
+            }
         }
 
         &_right {
@@ -169,7 +173,6 @@
                 height: 1rem;
                 z-index: 1;
                 top: -0.2rem;
-                left: 69%;
             }
 
             &-card {
@@ -200,7 +203,6 @@
             gap: 0.5rem;
 
             &-icon {
-                flex-basis: 25%;
 
                 img {
                     width: 100%;
@@ -285,6 +287,10 @@
         &_bottom {
             flex-direction: column;
 
+            &-box {
+                border-radius: 0.3rem;
+            }
+
             &_right {
                 p {
                     margin-bottom: .2rem;
@@ -326,7 +332,7 @@
 
             &-4 {
                 top: 25rem;
-                right: -2rem;
+                right: -1rem;
                 width: 80%;
             }
 
@@ -403,118 +409,56 @@
         }
 
         &_circle-2 {
-            position: absolute;
-            top: 14.2rem;
-            right: 4.2rem;
-
-            &-item {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-
-            &-1 {
-                width: 9rem;
-                height: 9rem;
-                border: 0.02rem solid var(--color-circle);
-                border-radius: 50%;
-            }
-
-            &-2 {
-                width: 13.2rem;
-                height: 13.2rem;
-                border: 0.02rem solid var(--color-circle);
-                border-radius: 50%;
-            }
+            top: 18.2rem;
         }
 
         &_circle-3 {
-            position: absolute;
-            top: 37rem;
-            right: 50%;
-
-            &-item {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-
-            &-1 {
-                width: 9rem;
-                height: 9rem;
-                border: 0.02rem solid var(--color-circle);
-                border-radius: 50%;
-            }
-
-            &-2 {
-                width: 13.2rem;
-                height: 13.2rem;
-                border: 0.02rem solid var(--color-circle);
-                border-radius: 50%;
-            }
+            top: 46rem;
         }
 
         &_circle-4 {
-            position: absolute;
-            top: 53rem;
-            right: 10%;
-
-            &-item {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-
-            &-1 {
-                width: 6rem;
-                height: 6rem;
-                border: 0.02rem solid var(--color-circle);
-                border-radius: 50%;
-            }
-
-            &-2 {
-                width: 11rem;
-                height: 10rem;
-                border: 0.02rem solid var(--color-circle);
-                border-radius: 50%;
-            }
+            top: 70rem;
         }
 
         &_circle-5 {
-            position: absolute;
-            top: 68.4rem;
-            right: 50%;
-
-            &-item {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                border: 0.02rem solid var(--color-circle);
-                border-radius: 50%;
-                border-radius: 50%;
-            }
-
-            &-1 {
-                width: 8rem;
-                height: 8rem;
-            }
-
-            &-2 {
-                width: 12.5rem;
-                height: 12.5rem;
-            }
+            top: 92.4rem;
         }
     }
 }
 
 /* 768px => 48em => Small devices (landscape phones, less than 768px)*/
 @media (max-width: 768px) {
+    :root {
+        --font-size-decs-2: 0.16rem;
+        --font-size-heading-3: .34rem;
+        --font-size-decs-3: .14rem;
+        --line-height-decs-3: 0.24rem;
+        --font-size-heading-2: .46rem;
+        --line-height-heading-2: 0.58rem;
+        --font-size-decs-3: 0.15rem;
+
+        --footer-topcontent-text: .13rem;
+        --footer-toplist-heading: .17rem;
+        --footer-toplist-item-a: .15rem;
+        --footer-bottom-list: .13rem;
+
+    }
+
     html {
         font-size: 13.02083vw;
+    }
+
+    .product {
+
+        &_top {
+            &-left-decs {
+                font-size: 0.18rem;
+            }
+        }
+    }
+
+    .community_top p {
+        font-size: .18rem;
     }
 }
 
@@ -528,11 +472,13 @@
         --font-size-btn-outline: .18rem;
 
         --font-size-decs-2: 0.18rem;
-        --font-size-heading-2: 0.46rem;
         --font-size-heading-3: 0.38rem;
-        --font-size-decs-3: 0.15rem;
-        --line-height-decs-3: 0.24rem;
+        --line-height-heading-1: 1rem;
+        --line-height-heading-2: 0.68rem;
 
+        --footer-fontsize-input: .2rem;
+        --footer-pading-top-bottom: .157rem;
+        --font-size-nav: .25rem;
     }
 
     html {
@@ -544,6 +490,21 @@
             &.btn.btn-white {
 
                 display: none;
+            }
+        }
+    }
+
+    .header_nav.open {
+        padding: 0.2rem 0.5rem 0;
+        gap: .2rem;
+    }
+
+    .header_nav {
+
+        &_mobile-2 {
+
+            .btn-white {
+                padding: 0.3rem 0.24rem;
             }
         }
     }
@@ -560,24 +521,12 @@
         }
     }
 
-    .power {
-
-
-        &_bottom {
-            &-item {
-                flex-basis: 100%;
-                text-align: unset;
-            }
-        }
-    }
-
     .product {
         gap: 0.4rem;
 
         &_top {
             gap: 0.3rem;
             text-align: start;
-            padding: 0 0.5rem;
 
             &-left-decs {
                 font-size: 0.18rem;
@@ -585,16 +534,243 @@
         }
 
         &_bottom {
-            padding: 0 0.545rem 0.5rem;
-            padding-top: 0.8rem;
+            padding: 0.8rem 0.3rem 0.5rem;
+
             &-card {
                 &-text {
                     h3 {
-                    padding: 0.08rem 0 0.2rem;
+                        padding: 0.08rem 0 0.2rem;
 
                     }
                 }
             }
+        }
+    }
+
+    .grow {
+
+        &_index {
+            flex-direction: column;
+            gap: 0.5rem;
+
+            &-item {
+                gap: 0.1rem;
+            }
+        }
+    }
+
+    .power {
+        gap: .3rem;
+
+        &_top {
+            text-align: left;
+            align-items: flex-start;
+            gap: .3rem;
+
+            h2 {
+                padding-right: .3rem;
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+
+        &_bottom {
+            &-item {
+                flex-basis: 100%;
+                text-align: unset;
+                padding: 0;
+
+                h3 {
+                    font-size: .25rem;
+                }
+
+                &:nth-child(4),
+                &:nth-child(5),
+                &:nth-child(6) {
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .ecosystem {
+
+        &_bottom {
+
+            &-icon {
+                flex-basis: 40%;
+
+            }
+        }
+    }
+
+    .secured {
+
+        &_bottom {
+
+            h2 {
+                font-size: .35rem;
+                line-height: .42rem;
+            }
+
+            &_right-img {
+                margin: 0.5rem 0 0rem;
+            }
+        }
+    }
+
+    .generation {
+        gap: .5rem;
+
+        &_top {
+            text-align: unset;
+        }
+
+        &_bottom {
+
+            &-item {
+                align-items: unset;
+                text-align: unset;
+
+                p {
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .community {
+
+        &_bottom {
+            gap: 0.3rem;
+            flex-direction: column;
+
+            &-item {
+                gap: 0.06rem;
+            }
+        }
+
+        &_buttons {
+            flex-direction: column;
+            padding: 0 0.5rem;
+        }
+    }
+
+    .pioneer {
+
+        &_bottom {
+            gap: 0.5rem;
+            justify-content: center;
+
+            &-item {
+
+                &:nth-child(n) {
+                    transform: unset;
+                    flex-basis: 35%;
+                    margin-bottom: unset;
+                    flex-grow: unset;
+
+                    .pioneer_bottom-item-box {
+                        width: unset;
+                    }
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: .3rem;
+                }
+            }
+        }
+    }
+
+    .footer {
+
+        &_top {
+            gap: .5rem;
+
+            &_content {
+
+                &-form {
+                    flex-direction: column;
+                    gap: .1rem;
+
+                    &-email {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &-list {
+                flex-basis: 40%;
+
+
+            }
+        }
+
+        &_bottom {
+            &-list {
+                flex-wrap: wrap;
+                gap: 0.2rem;
+
+                &-copy {
+                    flex-basis: 100%;
+                }
+            }
+        }
+
+    }
+
+    .decor {
+
+
+        &_ellipses {
+
+            &-4 {
+                top: 35rem;
+            }
+
+            &-5 {
+                top: 58.5rem;
+            }
+
+            &-6 {
+                top: 81rem;
+            }
+
+            &-7 {
+                top: 81rem;
+            }
+
+            &-8 {
+                top: 104rem;
+            }
+
+            &-9 {
+                top: 121.5rem;
+                width: 60%;
+            }
+
+            &-10 {
+                top: 121.5rem;
+                width: 50%;
+            }
+        }
+
+        &_circle-2 {
+            top: 23.2rem;
+        }
+
+        &_circle-3 {
+            top: 65rem;
+        }
+
+        &_circle-4 {
+            top: 94rem;
+        }
+
+        &_circle-5 {
+            top: 120.4rem;
         }
     }
 }
