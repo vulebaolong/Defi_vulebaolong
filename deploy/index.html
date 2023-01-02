@@ -7,6 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Defi Finance - The Yield Automation Protocol</title>
 
+    <meta property="og:site_name" content="Defi Finance - The Yield Automation Protocol">
+    <meta property="og:title" content="Defi Finance - The Yield Automation Protocol">
+    <meta property="og:type" content="website">
+    <meta name="description"
+        content="Defi offers first-rate yield optimization and risk tranching strategies. Get the best yield by using, integrating or building on top of Defi's products.">
+    <meta property="og:description"
+        content="Defi offers first-rate yield optimization and risk tranching strategies. Get the best yield by using, integrating or building on top of Defi's products.">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image" content="http://localhost:8080/assets/img/og-image.3ed44d.png">
+    <meta property="og:image:alt"
+        content="Defi offers first-rate yield optimization and risk tranching strategies. Get the best yield by using, integrating or building on top of Defi's products.">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="http://localhost:8080/assets/img/og-image.3ed44d.png">
+    <meta name="twitter:title" content="Defi Finance - The Yield Automation Protocol">
+    <meta name="twitter:description"
+        content="Defi offers first-rate yield optimization and risk tranching strategies. Get the best yield by using, integrating or building on top of Defi's products.">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icon/icon_32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icon/icon_16.png">
+
     <!-- FONT GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +43,8 @@
     <script defer src="/js/lottie.min.js"></script>
     <script defer src="/js/lord-icon.js"></script>
     <script defer src="/js/index.js"></script>
+
+    <script src="./assets/lib/scrollreveal.min.js"></script>
 </head>
 
 <body>
@@ -90,12 +114,14 @@
                                     <span class="btn-white-text">Enter App</span>
                                 </a>
                             </div>
-                            <a class="hero_left-button-right btn btn-outline" href="#">
-                                <span>Read The Documentation</span>
-                                <lord-icon class="hero_left-button-right-icon" trigger="hover" target="a"
-                                    src="/assets/lottie/icon/icon_btn_outline.json">
-                                </lord-icon>
-                            </a>
+                            <div class="hero_left-button-right">
+                                <a class="btn btn-outline" href="#">
+                                    <span>Read The Documentation</span>
+                                    <lord-icon class="hero_left-button-right-icon" trigger="hover" target="a"
+                                        src="/assets/lottie/icon/icon_btn_outline.json">
+                                    </lord-icon>
+                                </a>
+                            </div>                           
                         </div>
                     </div>
                     <div class="hero_right">
@@ -114,11 +140,11 @@
             <div class="container">
                 <div class="product">
                     <div class="product_top">
-                        <div class="product_top-left">
+                        <div class="product_top-left" usescroll="slide-up">
                             <p class="product_top-left-decs">Yield optimization and risk tranching</p>
                             <h2 class="heading_secondary">Get the yield best suited for your needs</h2>
                         </div>
-                        <div class="product_top-right">
+                        <div class="product_top-right" usescroll="slide-up">
                             <p class="heading_secondary-decs">
                                 Achieve capital efficiency with Idle's products: as a leading DeFi yield aggregator,
                                 Idle offers first-rate yield optimization and risk tranching strategies. Get the best
@@ -128,7 +154,7 @@
                         </div>
                     </div>
                     <div class="product_bottom">
-                        <div class="product_bottom-card product_bottom-best label-1" id="card-1">
+                        <div class="product_bottom-card product_bottom-best label-1" id="card-1" usescroll="slide-up">
 
                             <div class="product_bottom-card-lottie">
                                 <lord-icon class="product_bottom-card-lottie-icon" trigger="morph"
@@ -190,7 +216,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product_bottom-card product_bottom-protected label-1" id="card-1">
+                        <div class="product_bottom-card product_bottom-protected label-1" id="card-1" usescroll="slide-up">
                             <div class="product_bottom-card-lottie">
                                 <lord-icon class="product_bottom-card-lottie-icon" trigger="morph"
                                     target=".product_bottom-protected" src="/assets/lottie/lottie_protected.json">
@@ -199,7 +225,7 @@
                             <div class="product_bottom-card-text">
                                 <span class="heading_tertiary-decs">Senior Tranche</span>
                                 <h3 class="heading_tertiary">Protected Yield</h3>
-                                <p class="heading_tertiary-decs">The innovative safeguarded strategy covered by</p>
+                                <p class="heading_tertiary-decs">The innovative safeguarded strategy covered</p>
                                 <p class="heading_tertiary-decs">the counterpart Junior Tranche</p>
                             </div>
                             <div class="product_bottom-card-index">
@@ -253,7 +279,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product_bottom-card product_bottom-boosted label-1" id="card-1">
+                        <div class="product_bottom-card product_bottom-boosted label-1" id="card-1" usescroll="slide-up">
                             <div class="product_bottom-card-lottie">
                                 <lord-icon class="product_bottom-card-lottie-icon" trigger="morph"
                                     target=".product_bottom-boosted" src="/assets/lottie/lottie_boosted.json">
@@ -830,6 +856,7 @@
             <div class="decor_circle-5-item decor_circle-5-2"></div>
         </div>
     </div>
+
 </body>
 
 </html>

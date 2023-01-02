@@ -1,42 +1,3 @@
-'use-strict'
-
-const classArr = [
-    'hero_section',
-    'header',
-    'header_nav',
-    'header_nav_mobile-1-close',
-    'icon_nav_open'
-]
-const element = {}
-
-for (const item of classArr) {
-    // console.log(item);
-    element[`${item}El`] = document.querySelector(`.${item}`)
-}
-
-
-function handler(scrollPos) {
-    window_scrollY = window.scrollY;
-    // console.log(window_scrollY);
-    if (window_scrollY) {
-        // console.log('thêm');
-        element[`headerEl`].classList.add('sticky')
-    } else {
-        console.log('xóa');
-        element[`headerEl`].classList.remove('sticky')
-    }
-
-}
-
-function openCloseNav(params) {
-    element[`header_navEl`].classList.toggle('open')
-}
-
-document.addEventListener("scroll", handler);
-element[`icon_nav_openEl`].addEventListener("click", openCloseNav);
-element[`header_nav_mobile-1-closeEl`].addEventListener("click", openCloseNav);
-
-
 /*{
     delay: 0,
     distance: '0px',
@@ -71,11 +32,9 @@ element[`header_nav_mobile-1-closeEl`].addEventListener("click", openCloseNav);
 }
 */
 
-// SETTING Scroll
+// SETTING
 // ==================================================================
 const log = false; //false, true
-const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-
 const dataScroll = {
     nodeList: [],
 
@@ -159,6 +118,7 @@ Mỗi array level 1 là mỗi step, lặp qua step để thiết lập delay tă
 mỗi lement nếu muốn thiết lập distance, thì
 distance là key trong 1 object và cùng với element trong 1 aray
 */
+console.log(w);
 const dataNodeList = [
     [
         '.hero_left-text', '.hero_left-description', '.hero_left-button-left', '.hero_left-button .hero_left-button-right'
@@ -167,7 +127,7 @@ const dataNodeList = [
         '.product_top-left', '.product_top-right'
     ],
     [
-        [vw > 992 ? '.product_bottom-card' : '.product_bottom', { distance: '50%' }]
+        ['.product_bottom-card', { distance: '50%' }]
     ],
     [
         '.grow .heading_secondary', '.grow_index-item'
@@ -202,7 +162,7 @@ const slideUpOption = {
     duration: 1500,
 };
 
-// RUN Scroll
+// RUN
 // ==================================================================
 const nodeList = dataScroll.nodeListGet(dataNodeList)
 console.log(nodeList);

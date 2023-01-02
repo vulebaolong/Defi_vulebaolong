@@ -158,6 +158,14 @@ footer {
     text-decoration: none;
 }
 
+// ẩn các phần tử mobile trong dekstop
 .M {
     display: none;
 }
+
+// scrollreveal, ngăn nhấp nháy
+// Nhiều nhà phát triển đặt <script>thẻ của họ ngay trước </body>thẻ đóng, cho phép nội dung tài liệu bắt đầu hiển thị trước khi tải xong tập lệnh. Nói chung, điều này tốt cho hiệu suất, nhưng trong trường hợp này, điều đó cũng có nghĩa là nội dung có thể hiển thị trong một thời gian ngắn trước khi ScrollReveal tiếp quản.
+html.sr .load-hidden {
+    visibility: hidden;
+}
+

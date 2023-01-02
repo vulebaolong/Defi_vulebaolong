@@ -212,7 +212,8 @@ a.label-1 {
     color: var(--color-white);
     font-size: var(--font-size-btn-outline);
     font-weight: 700;
-    padding: 0; }
+    padding: 0;
+    gap: .1rem; }
 
 .hero {
   display: flex;
@@ -1094,6 +1095,9 @@ footer {
 
 .M {
   display: none; }
+
+html.sr .load-hidden {
+  visibility: hidden; }
 
 /* 992px => 62em => Medium devices (tablets, less than 992px)*/
 @media (max-width: 992px) {
