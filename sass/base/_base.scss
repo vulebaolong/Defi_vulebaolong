@@ -1,6 +1,6 @@
 :root {
-    --font: 'Open Sans', sans-serif;
-    --font-icon: 'Work Sans', sans-serif;
+    --font: "Open Sans", sans-serif;
+    --font-icon: "Work Sans", sans-serif;
     --color-black: #000;
     --color-gray: #cdd0d6;
     --color-white: #ffffff;
@@ -20,45 +20,50 @@
 
     --color-circle: rgba(255, 255, 255, 0.08);
 
-    --color-product-card-bg: linear-gradient(to top, #3643b9 -35.85%, #041079 112.68%);
+    --color-product-card-bg: linear-gradient(
+        to top,
+        #3643b9 -35.85%,
+        #041079 112.68%
+    );
+    --color-bg-toTop: #8e97b0;
 
-
+    // --width-container: 11.1rem;
     --width-container: 11.1rem;
+
     --container-width-small: 8rem;
-    --header-height: .76rem;
-    
+    --header-height: 0.76rem;
+
     --width-pioneer_bottom-item-box: 11.1rem;
     --width-card: 3.57rem;
-    
-    --wh-logo-icon: .6rem;
-    --font-size-logo: .3rem;
-    --translateX-logo-text: -.1rem;
+
+    --wh-logo-icon: 0.6rem;
+    --font-size-logo: 0.3rem;
+    --translateX-logo-text: -0.1rem;
     --translateY-logo-text: 0rem;
 
     --padding-header: 0.17rem 0.52rem;
 
-    
     --padding-section: 1rem;
 
-    --font-size-heading-1: .72rem;
-    --font-size-heading-2: .36rem;
-    --font-size-heading-3: .28rem;
-    --font-size-heading-4: .2rem;
+    --font-size-heading-1: 0.72rem;
+    --font-size-heading-2: 0.36rem;
+    --font-size-heading-3: 0.28rem;
+    --font-size-heading-4: 0.2rem;
 
-    --font-size-decs-1: .24rem;
-    --font-size-decs-2: .14rem;
-    --font-size-decs-3: .12rem;
-    --font-size-decs-4: .12rem;
+    --font-size-decs-1: 0.24rem;
+    --font-size-decs-2: 0.14rem;
+    --font-size-decs-3: 0.12rem;
+    --font-size-decs-4: 0.12rem;
 
-    --font-size-textindex-1: .54rem;
-    --font-size-nav: .16rem;
+    --font-size-textindex-1: 0.54rem;
+    --font-size-nav: 0.16rem;
     --font-weight-nav: 600;
 
     //button
-    --font-size-btn-white: .14rem;
+    --font-size-btn-white: 0.14rem;
     --padding-btn-white: 0.1rem 0.24rem;
-    --font-size-btn-outline: .14rem;
-    
+    --font-size-btn-outline: 0.14rem;
+
     --font-weight-heading-1: 600;
     --font-weight-heading-2: 700;
     --font-weight-heading-3: 700;
@@ -71,7 +76,7 @@
 
     --font-weight-textindex-1: 700;
 
-    --letter-spacing-heading-1: -.02rem;
+    --letter-spacing-heading-1: -0.02rem;
     --letter-spacing-heading-2: -1%;
     --letter-spacing-heading-3: normal;
     --letter-spacing-heading-4: normal;
@@ -83,28 +88,28 @@
 
     --letter-spacing-textindex-1: -1%;
 
-    --line-height-heading-1: .8rem;
-    --line-height-heading-2: .48rem;
-    --line-height-heading-3: .44rem;
-    --line-height-heading-4: .32rem;
+    --line-height-heading-1: 0.8rem;
+    --line-height-heading-2: 0.48rem;
+    --line-height-heading-3: 0.44rem;
+    --line-height-heading-4: 0.32rem;
 
-    --line-height-decs-1: .4rem;
-    --line-height-decs-2: .27rem;
-    --line-height-decs-3: .26rem;
-    --line-height-decs-3: .2rem;
+    --line-height-decs-1: 0.4rem;
+    --line-height-decs-2: 0.27rem;
+    --line-height-decs-3: 0.26rem;
+    --line-height-decs-3: 0.2rem;
 
-    --line-height-textindex-1: .56rem;
+    --line-height-textindex-1: 0.56rem;
 
-    --transition: all .3s cubic-bezier(.66, 0, .34, 1);
+    --transition: all 0.3s;
 
-    --footer-fontsize-input: .16rem;
-    --footer-pading-top-bottom: .13rem;
-    --footer-topcontent-text: .11rem;
-    --footer-toplist-heading: .15rem;
-    --footer-toplist-item-a: .14rem;
-    --footer-bottom-list: .12rem;
+    --footer-fontsize-input: 0.16rem;
+    --footer-pading-top-bottom: 0.13rem;
+    --footer-topcontent-text: 0.11rem;
+    --footer-toplist-heading: 0.15rem;
+    --footer-toplist-item-a: 0.14rem;
+    --footer-bottom-list: 0.12rem;
 
-    --padding-mb: .5rem;
+    --padding-mb: 0.5rem;
 }
 
 *,
@@ -120,7 +125,7 @@ html {
     -webkit-text-size-adjust: none;
     // width: 100%;
     width: 100vw;
-
+    scroll-behavior: smooth;
 }
 
 body {
@@ -160,7 +165,7 @@ footer {
 
 // ẩn các phần tử mobile trong dekstop
 .M {
-    display: none;
+    display: none !important;
 }
 
 // scrollreveal, ngăn nhấp nháy
@@ -169,3 +174,11 @@ html.sr .load-hidden {
     visibility: hidden;
 }
 
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,30 @@
+.backToTop {
+    --location: 0.4rem;
+    --wh1: 0.5rem;
+    background-color: var(--color-bg-toTop);
+    position: fixed;
+    bottom: 110%;
+    right: var(--location);
+    width: var(--wh1);
+    height: var(--wh1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s cubic-bezier(0.17, 1.49, 0.28, 0.98);
+    z-index: 1;
+    text-decoration: none;
+
+    i {
+        color: var(--color-black);
+        font-size: 0.2rem;
+    }
+
+    &:hover {
+        background-color: var(--color-white);
+    }
+
+    &.showbtt {
+        bottom: var(--location);
+    }
+}

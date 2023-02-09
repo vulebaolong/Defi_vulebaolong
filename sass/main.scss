@@ -1,27 +1,48 @@
+@import "./base/typography";
+@import "./base/typography";
 
+@import "./component/tooltip";
+@import "./component/header";
+@import "./component/button";
+@import "./component/hero";
+@import "./component/product";
+@import "./component/decor";
+@import "./component/grow";
+@import "./component/power";
+@import "./component/secured";
+@import "./component/ecosystem";
+@import "./component/generation";
+@import "./component/community";
+@import "./component/pioneer";
+@import "./component/footer";
+@import "./component/logo";
+@import "./component/backtotop";
 
-@import "./sass/base/typography";
+@import "./base/base";
 
+@import "./component/mobile";
+@import "./query/query992";
 
-@import "./sass/component/tooltip";
-@import "./sass/component/header";
-@import "./sass/component/button";
-@import "./sass/component/hero";
-@import "./sass/component/product";
-@import "./sass/component/decor";
-@import "./sass/component/grow";
-@import "./sass/component/power";
-@import "./sass/component/secured";
-@import "./sass/component/ecosystem";
-@import "./sass/component/generation";
-@import "./sass/component/community";
-@import "./sass/component/pioneer";
-@import "./sass/component/footer";
-@import "./sass/component/logo";
+// @import "./sass/base/typography";
 
+// @import "./sass/component/tooltip";
+// @import "./sass/component/header";
+// @import "./sass/component/button";
+// @import "./sass/component/hero";
+// @import "./sass/component/product";
+// @import "./sass/component/decor";
+// @import "./sass/component/grow";
+// @import "./sass/component/power";
+// @import "./sass/component/secured";
+// @import "./sass/component/ecosystem";
+// @import "./sass/component/generation";
+// @import "./sass/component/community";
+// @import "./sass/component/pioneer";
+// @import "./sass/component/footer";
+// @import "./sass/component/logo";
+// @import "./sass/component/backtotop";
 
-@import "./sass/base/base";
+// @import "./sass/base/base";
 
-@import "./sass/component/mobile";
-@import "./sass/query/query992";
-
+// @import "./sass/component/mobile";
+// @import "./sass/query/query992";

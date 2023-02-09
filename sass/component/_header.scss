@@ -4,15 +4,17 @@
     align-items: center;
     height: var(--header-height);
     padding: var(--padding-header);
-    position: fixed;
+    position: absolute;
     z-index: 10;
     width: 100%;
-    transition: all .2s;
+    transition: transform .3s;
 
     &.sticky {
+    position: fixed;
         backdrop-filter: blur(24px);
         -webkit-backdrop-filter: blur(24px);
         background: rgba(4, 15, 55, .5);
+        animation: .3s slide-down;
     }
 
     &_nav {

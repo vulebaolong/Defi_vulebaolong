@@ -4,11 +4,11 @@
   "description": "the yield automation protocol",
   "main": "index.js",
   "scripts": {
-    "start": "node-sass sass/main.scss css/style.css -w"
+    "start": "sass --watch sass/main.scss css/style.css"
   },
   "author": "Vu Le Bao Long",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^8.0.0"
+    "sass": "^1.58.0"
   }
 }
