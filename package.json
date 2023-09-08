@@ -1,14 +1,14 @@
 {
-  "name": "defi_vulebaolong",
-  "version": "1.0.0",
-  "description": "the yield automation protocol",
-  "main": "index.js",
-  "scripts": {
-    "start": "sass --watch sass/main.scss css/style.css"
-  },
-  "author": "Vu Le Bao Long",
-  "license": "ISC",
-  "devDependencies": {
-    "sass": "^1.58.0"
-  }
+    "name": "defi_vulebaolong",
+    "version": "1.0.0",
+    "description": "the yield automation protocol",
+    "main": "index.js",
+    "scripts": {
+        "start": "sass --watch sass/main.scss css/style.css"
+    },
+    "author": "Vu Le Bao Long",
+    "license": "ISC",
+    "devDependencies": {
+        "sass": "^1.58.0"
+    }
 }
